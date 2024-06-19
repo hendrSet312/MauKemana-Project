@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destination-sample.css">
+  <title>Travel Tracker</title>
+</head>
+<body>
+    <section>
+      <nav>
+          <h2>Mau Kemana</h2>
+          <ul>
+            <li><a href="../../Homepage/homepage.html">Home</a></li>
+            <li><a href="../../destination/destination.html">Destination</a></li>
+            <li><a href="../../plans/plans.html">Plans</a></li>
+            <li><a href="../../about_us/aboutus.html">About Us</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </nav>
+  </section>
+
+
+<main class="main-content">
+
+    <button onclick="window.history.back()" class="button-back"> << </button>
+    
+    
+    <div class="image-gallery">
+        <img src="../../img/destination/background.png" alt="Nusa Penida Island">
+    </div>
+
+
+    <section class="header-information">
+        <h2>Nusa Penida Island</h2>
+        <p>Bali, Indonesia</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+    </section>
+    <a href="../add_destination_page/add_destination_page.html"><button class="book-btn">Book Your Trip!</button></a>
+
+    <section class="content">
+            <div class="reviews">
+                <h3>⭐ Reviews</h3>
+                <div class="review-bar">
+                    <div class = 'rated-bar 1'>
+                        <p>5</p>
+                        <div class="bar" style="width: 80%;"> </div>
+                    </div>
+                    <div class = 'rated-bar 2'>
+                        <p>4</p>
+                        <div class="bar" style="width: 60%;"> </div>
+                    </div>
+                    <div class = 'rated-bar 3'>
+                        <p>3</p>
+                        <div class="bar" style="width: 40%;"> </div>
+                    </div>
+                    <div class = 'rated-bar 4'>
+                        <p>2</p>
+                        <div class="bar" style="width: 10%;"> </div>
+                    </div>
+                    <div class = 'rated-bar 5'>
+                        <p>1</p>
+                        <div class="bar" style="width: 20%;"> </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = 'details-activity-cost'>
+                <div class="things-to-do">
+                    <h3>🎯 Things To Do</h3>
+                    <ul>
+                        <li>Sightseeing</li>
+                        <li>Snorkeling</li>
+                        <li>Sunbathing</li>
+                    </ul>
+                </div>
+
+                <div class="avg-spending">
+                    <h3>💵 Avg. Spending Per Day</h3>
+                    <ul>
+                        <li>🚙 Transport mode: $10</li>
+                        <li>🍽️ Foods: $20</li>
+                        <li>🏨 Hotel: $200</li>
+                        <li>🛍️ Shopping: $15</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <section class = 'stats-visitor-book'>
+                <div id="avg-visitors">
+                    <h3>🚶Average Daily Visitors</h3>
+                    <div id = 'visitors-stat'>
+                    </div>
+                </div>
+            </section>
+    </section>
+</main>
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="destination-sample.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.account-bar {
+    display: flex;
+    float: right;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    max-width: 300px;
+    margin-top: -70px;
+    height: 80px;
+}
+
+.account-bar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.account-profile{
+    margin-top: -10px;
+}
+
+.account-details {
+    margin-top: -20px;
+    margin-left: -55px;
+    display: flex;
+    justify-content: space-between;
+}
+.account-details h3 {
+    font-size: 1.2rem;
+}
+
+.account-details li{
+    padding-left: 5px;
+    margin: 10px;
+}
+
+.account-status, .account-location {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #555;
+    margin-top: 5px;
+}
+.account-status::before {
+    content: '●';
+    color: green;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+.account-location {
+    background-color: #f57c00;
+    color: #fff;
+    width: max-content;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+.account-location::before {
+    content: '📍';
+    margin-right: 5px;
+}
+
+/* a navigation blocks on the left side with orange color*/
+
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* a navigation blocks on the left side with orange color*/
+nav{
+    background-color: #FFA500;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: calc(0%);
+}
+
+nav h2{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* a block of navigation links with orange color background and hover effect to white color*/
+nav a{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: oran;
+}
+
+nav a:hover{
+    background-color: white;
+    width: auto;
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+
+.summary ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: -50px;
+    margin-top: -30px;
+}
+
+.summary h2{
+    font-size: 30px;
+}
+
+.overview{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+.icon {
+    font-size: 40px;
+    color: orange;
+    margin-right: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:20px;
+}
+
+.badge .percentage {
+    margin-left: 5px;
+}
+
+.total{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.spending {
+    padding: 20px;
+    margin-top: -50px;
+    margin-left:-70px;
+}
+
+.spending ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.spending h3{
+    font-size: 30px;
+}
+
+.spending li{
+    margin-left: 20px;
+}
+
+.chart {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+
+#spending-sector{
+    width:480px;
+}
+
+.chart h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    height: 700px;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+.section {
+    padding: 20px;
+    width: 800px;
+    
+}
+
+.section h2{
+    font-size: 30px;
+    
+}
+
+.menu-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 550px;
+}
+
+.menu-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.trip-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.trip-card img {
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+}
+.trip-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.trip-details h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+.trip-details .location, .trip-details .dates {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+.trip-details .location::before {
+    content: '📍';
+    margin-right: 5px;
+}
+.trip-details .dates::before {
+    content: '📅';
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    body{
+        margin: 0;
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        margin:0;
+        top: 0;
+        position: fixed;
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav h2 {
+        
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    header{
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    .account-bar {
+        display: none;
+    }
+
+    header h2{
+        text-align: center;
+    }
+
+    .summary ul {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .summary h2{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .overview {
+        margin: 20px auto;
+        justify-content: space-around;
+    }
+    .spending {
+        margin-left:0;
+        margin-right: auto;
+        max-width: 500px;
+    }
+
+    .spending h3{
+        text-align: center;
+    }
+    
+    .menu-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .section {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu-section {
+        height: auto;
+    }
+
+    .section h2 {
+        text-align: center;
+    }
+
+    .trip-card img {
+        width: 100px;
+        height: 100px;
+    }
+    .trip-details {
+        padding: 10px;
+    }
+    .trip-details h3 {
+        font-size: 1rem;
+    }
+    .trip-details .location, .trip-details .dates {
+        font-size: 0.875rem;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add_destination_page.css">
+  <title>Travel Tracker</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <h2>Mau Kemana</h2>
+            <ul>
+              <li><a href="../../Homepage/homepage.html">Home</a></li>
+              <li><a href="../../destination/destination.html">Destination</a></li>
+              <li><a href="../../plans/plans.html">Plans</a></li>
+              <li><a href="../../about_us/aboutus.html">About Us</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </nav>
+    </section>
+
+
+<main class="main-content">
+    <button onclick="window.history.back()" class="button-back"> << </button>
+
+    <h2>Set Your Destination...</h2>
+        <form class="destination-form">
+            <div class="container-date-input">
+                <div class = 'input-date'>
+                    <p for="start-date"><strong>Start Date</strong></p>
+                    <input type="date" id="start-date" placeholder="mm/dd/yyyy">
+                </div>
+                <div class = 'input-date'>
+                    <p for="start-date"><strong>End Date</strong></p>
+                    <input type="date" id="end-date" placeholder="mm/dd/yyyy">
+                </div>
+            </div>
+            <div class="transport-mode">
+                <h3>Transport Mode</h3>
+                <div class = 'input-transport-container'>
+                    <div class = 'transport-opt'>
+                        <label>
+                            <input type="radio" name="transport" value="Plane" id = 'transport-input'> ✈️ Plane
+                        </label>
+                    </div>
+                    <div class = 'transport-opt'>
+                        <label>
+                            <input type="radio" name="transport" value="Bus" id = 'transport-input'> 🚌 Bus
+                        </label>
+                    </div>
+                    <div class = 'transport-opt'>
+                        <label>
+                            <input type="radio" name="transport" value="Train" id = 'transport-input'> 🚆 Train
+                        </label>
+                    </div>
+                    <div class = 'transport-opt'>
+                        <label>
+                            <input type="radio" name="transport" value="Cruiser" id = 'transport-input'> 🚢 Cruiser
+                        </label>
+                    </div> 
+                </div>   
+            </div>
+            <div class="spending-summary">
+                <h3>Spending Summary</h3>
+
+                    <div class = 'summary-section transport'>
+                        <ul>
+                            <li >Total Day: <span id = 'total-day'></span></li>
+                            <li>Transport Mode: <span id = 'transport-output'></span></li>
+                            <ul>
+                                <li>Arrival :  $ <span id = 'total-transport'></span></li>
+                                <li>Departure : $ <span id = 'total-transport'></span></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    
+
+                    <div class = 'summary-section accomodation'>
+                        <ul>
+                            <li>🍽 Foods: $<input type="number" id="food-cost"> x <span id = 'total-day'></span> = $ <span id="food-total"></span></li>
+                            <li>🏨 Hotel: $<input type="number" id="hotel-cost" > x <span id = 'total-day'></span> = $<span id="hotel-total"></span></li>
+                            <li>🛍 Shopping: $<input type="number" id="shopping-cost"> x <span id = 'total-day'></span> = $<span id="shopping-total"></span></li>
+                        </ul>
+                        <button type="button" id="reset-defaults">Use default costs</button>
+                    </div>
+                    
+
+                <div class="summary-section total">
+                    <hr>
+                    <p><strong>Total:</strong> $<span id="total-cost">245</span> x <span id = 'total-day'></span> = $<span id="total-cost"></span></p>
+                </div>
+            </div>
+            <button type="submit" class="add-trip" onclick="success()">Add Trip</button>
+        </form>
+    
+</main>
+<script src="add_destination_page.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

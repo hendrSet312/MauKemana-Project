@@ -1,0 +1,245 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* a navigation blocks on the left side with orange color*/
+nav{
+    background-color: #FFA500;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: calc(0%);
+}
+
+nav h2{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* a block of navigation links with orange color background and hover effect to white color*/
+nav a{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: oran;
+}
+
+nav a:hover{
+    background-color: white;
+    width: auto;
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.header-background{
+    background-image: url('../img/destination/header.png');
+    background-color: #92a1a9c4;
+    width: 100%;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-repeat: no-repeat;
+    background-position: right left top;
+}
+
+.bars {
+    width: 100%;
+    height: 100%;
+    margin-left: calc(10%);
+}
+
+.map-section{
+    background-color: orange;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+    max-width: 1200px; 
+    max-height: 2000px;
+    border-radius: 20px;
+}
+
+.map-section img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.image-mapper-shape {
+    fill: rgba(0, 0, 0, 0);
+}
+g:hover .image-mapper-shape {
+    stroke: white;
+    stroke-width: 2px;
+    opacity: 20%;
+}
+
+.island-bar{
+    display: flex;
+    background-color: #FFA500;
+    max-width: 1200px; 
+    max-height: 2000px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.island-info{
+    display: block;
+    width: 50%;
+}
+
+.island-name{
+    color : white;
+}
+
+.island-rating{
+    background-color: white;
+    width: 80%;
+    padding:20px 50px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.island-spend{
+    background-color: white;
+    width: 80%;
+    padding:20px 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.list-destination{
+    display: block;
+    width: 50%;
+}
+
+.menu-selector{
+    display: block;
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.island-rating{
+    display: flex;
+    height: max-content;
+}
+
+.star{
+    margin-left: 10px;
+    margin-top: 20px;
+    color : #D9D9D9;
+}
+
+.island-spend{
+    display: flex;
+}
+
+.money-total{
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.checked {
+    color: orange;
+}
+
+.menu-li{
+    padding-top: 10px;
+
+}
+
+.bar-selection{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 10px;
+    height:max-content;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        margin: auto;
+    }
+
+    .header-background{
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        margin:0;
+        top: 0;
+        position: fixed;
+        padding: 0;
+        overflow-y: hidden;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav h2 {
+        
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    main {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bars{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .map-section {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .island-bar{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu-li{
+        width: 90%;
+        margin-left: calc(0);
+        margin-right: auto;
+    }
+
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+  <title>Travel Tracker</title>
+</head>
+<body>
+  <nav>
+    <h2>Mau Kemana</h2>
+    <ul>
+      <li><a href="../Homepage/homepage.html">Home</a></li>
+      <li><a href="../destination/destination.html">Destination</a></li>
+      <li><a href="../plans/plans.html">Plans</a></li>
+      <li><a href="../about_us/aboutus.html">About Us</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header>
+        <h1>Good Morning, Rodri !</h1>
+      </header>
+      <div class="account-bar">
+        <img src="../img/homepage/avatar.png" alt="User Image">
+        <div class="account-profile">
+            <h3>Rodri Hernandez</h3>
+            <ul class = "account-details">
+              <li class="account-status">Online</li>
+              <li class="account-location">Macau</li>
+            </ul>
+            
+        </div>
+      </div>
+      
+
+
+    <section class="summary">
+      <h2>Overview</h2>
+      <ul>
+        <li>
+          <div class="overview 1">
+            <div class="icon">✈️</div>
+            <div class="text-container">
+                <div class="title">Total Miles Travelled</div>
+                <div class="total">56,75 mi</div>
+            </div>
+            <div class="badge">
+                <div>+20%</div>
+                <div class="percentage">🔼</div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="overview 2">
+            <div class="icon">💸</div>
+            <div class="text-container">
+                <div class="title">Total Spending</div>
+                <div class="total">$20,000</div>
+            </div>
+            <div class="badge">
+                <div>+20%</div>
+                <div class="percentage">🔼</div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="overview 3">
+            <div class="icon">🧳</div>
+            <div class="text-container">
+                <div class="title">Total Trips</div>
+                <div class="total">28</div>
+            </div>
+            <div class="badge">
+                <div>+20%</div>
+                <div class="percentage">🔼</div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+      
+      
+    </section>
+
+    <section class="spending">
+        <ul>
+          <li>
+            <h3>Spending History</h3>
+            <div class="chart" id="spending-history">
+            </div>
+          </li>
+          <li>
+            <h3>Spending Sector</h3>
+            <div class="chart" id="spending-sector">
+              
+            </div>
+          </li>
+          <li>
+            <h3>Trip Satisfaction</h3>
+            <div class="chart" id="trip-satisfaction">
+          </div>
+          </li>
+        </ul>
+    </section>
+
+    <div class="menu-container">
+      <div class="section">
+          <h2>Upcoming Trip</h2>
+          <div class = 'menu-section'>
+              <div class="trip-card">
+                <img src="../img/homepage/gbk.png" alt="Gelora Bung Karno">
+                
+                <div class="trip-details">
+                    <h3>Gelora Bung Karno</h3>
+                    <div class="location">DKI Jakarta</div>
+                    <div class="dates">25 March 2024 - 29 March 2024</div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="section">
+          <h2>Completed Trip</h2>
+          <div class = 'menu-section'>
+              <div class="trip-card">
+                <img src="../img/homepage/raja_ampat.png" alt="Raja Ampat">
+                
+                <div class="trip-details">
+                    <h3>Raja Ampat</h3>
+                    <div class="location">Papua Barat</div>
+                    <div class="dates">30 March 2024 - 31 March 2024</div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+  </main>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="d3-charts.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+/* a navigation blocks on the left side with orange color*/
+
+
+
+nav{
+    background-color: #FFA500;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: calc(0%);
+}
+
+nav h2{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* a block of navigation links with orange color background and hover effect to white color*/
+nav a{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: orange;
+}
+
+nav a:hover{
+    background-color: white;
+    width: auto;
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.plans-li{
+    display: flex;
+
+}
+
+.plans-li a{
+    text-decoration: none;
+    color: black;
+}
+
+.plans-item{
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.279);
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 20px;
+}
+
+
+.plans-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.name-destination{
+    font-weight: bold;
+}
+
+.status{
+    padding:10px;
+    border-radius: 10px;
+    width: max-content;
+    color: white;
+    background-color: rgb(0, 130, 15);
+}
+
+.upcoming{
+    background-color: grey;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 40%;
+}
+
+.modal-content .image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .general{
+    display: flex;
+    margin-left: -20px;
+}
+
+.modal-content .general p{
+    padding:5px 30px;
+    margin : 0;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

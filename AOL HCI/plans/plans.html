@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plans.css">
+  <title>Travel Tracker</title>
+</head>
+<body>
+  <main>
+
+    <section>
+        <nav>
+            <h2>Mau Kemana</h2>
+            <ul>
+              <li><a href="../Homepage/homepage.html">Home</a></li>
+              <li><a href="../destination/destination.html">Destination</a></li>
+              <li><a href="../plans/plans.html">Plans</a></li>
+              <li><a href="../about_us/aboutus.html">About Us</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </nav>
+    </section>
+
+    <section class = 'plans-menu'>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class = 'image'>
+            <img src="aa" alt="">
+          </div>
+          <h2 class = 'name-destination'></h2>
+          <div class = 'description general'>
+            <p class = 'location-destination'></p>
+            <p class = 'date-destination'></p>
+            <p class = 'status'></p>
+          </div>
+          <div class = 'description cost'>
+            <h2>Cost Summary</h2>
+            <ul>
+              <li class = 'detail transport'>🚗 Transport Mode: Plane
+                  <ul>
+                      <li>Arrival: $20</li>
+                      <li>Departure: $20</li>
+                  </ul>
+              </li>
+              <li class = 'detail food'>🍽️ Foods: $20 / day</li>
+              <li class = 'detail hotel'>🏨 Hotel: $200 / day</li>
+              <li class = 'detail shopping'>🛍️ Shopping: $15 / day</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class = 'plans-li'>
+
+       
+
+        <a class = 'item' href="#Gelora_Bung_Karno">
+          <div class="plans-item">
+            <div class = 'image'>
+              <img src="../img/plans/gbk.jpeg" alt="">
+            </div>
+            <div class = 'description'>
+              <p class = 'name-destination'>Gelora Bung Karno</p>
+              <p class = 'location-destination'>📍 DKI Jakarta</p>
+              <p class = 'date-destination'>📅 25 March 2024 - 29 March 2024</p>
+              <p class = 'status upcoming'>⌛ Upcoming</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#Raja_Ampat" class = 'item'>
+          <div class="plans-item">
+            <div class = 'image'>
+              <img src="../img/plans/raja-ampat.jpg" alt="">
+            </div>
+            <div class = 'description'>
+              <p class = 'name-destination'>Raja Ampat</p>
+              <p class = 'location-destination'>📍 Papua Barat</p>
+              <p class = 'date-destination'>📅 30 March 2024 - 31 March 2024</p>
+              <p class = 'status'>✅ Completed</p>
+            </div>
+          </div>
+        </a>  
+        
+
+      </section>
+    </section>
+    <script src="plans.js"></script>
+</body>
+</html>

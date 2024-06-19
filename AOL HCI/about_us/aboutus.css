@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+
+
+/* a navigation blocks on the left side with orange color*/
+
+
+
+nav{
+    background-color: #FFA500;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: calc(0%);
+}
+
+nav h2{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* a block of navigation links with orange color background and hover effect to white color*/
+nav a{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: orange;
+}
+
+nav a:hover{
+    background-color: white;
+    width: auto;
+}
+
+main{
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+.desc{
+    width: 90%;
+    padding: 20px;
+    background-color: #FFECD3;
+}
+
+.desc h1{
+    font-size: 32px;
+}
+
+.desc p{
+    font-size: 20px;
+}
+
+.img-background{
+    margin-top: calc(18%);
+    position: fixed;
+    margin-left: calc(25%);
+}

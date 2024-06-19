@@ -1,0 +1,283 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+/* a navigation blocks on the left side with orange color*/
+
+.button-back {
+    width: min-content;
+    height: min-content;
+    padding: 10px;
+    border : 1px solid white;
+    border-radius: 10px;
+    background-color: #FF6F00;
+    color: white;
+    font-size: 1.5em;
+    z-index: 999;
+    margin-left: -15px;
+}
+
+nav{
+    background-color: #FFA500;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: calc(0%);
+}
+
+nav h2{
+    padding: 16px;
+    text-align: center;
+    color: white;
+}
+
+/* a block of navigation links with orange color background and hover effect to white color*/
+nav a{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    background-color: orange;
+}
+
+nav a:hover{
+    background-color: white;
+    width: auto;
+}
+
+
+.main-content {
+    font-size: 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 600px;
+    margin-left:240px;
+}
+
+.header-information{
+    display: absolute;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.header-information h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header-information p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.image-gallery {
+    margin-top: -60px;
+    margin-left: -100px;
+    width: max-content;
+    position: relative;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.details-activity-cost {
+    font-size: 1.2em;
+    display: block;
+    width: 30%;
+}
+
+.things-to-do{
+    height: calc(40%);
+}
+
+.things-to-do li{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.avg-spending{
+    height: calc(40%);
+}
+
+.stats-visitor-book{
+    display: block;
+    gap: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.book-btn {
+    background-color: #FF6F00;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: calc(5%);
+    margin-bottom: 10px;
+    width: 20%;
+    float: right;
+}
+
+.reviews{
+    width: 30%;
+    height: 89%;
+}
+
+.reviews h3{
+    font-size: 1.3em;
+}
+
+.reviews, .things-to-do, .avg-spending, .avg-visitors {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin : 10px;
+    border-radius: 5px;
+}
+
+.review-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.review-bar .bar{
+    background-color: #F0A544;
+    color: #fff;
+    padding: 2px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: right;
+    margin:6px;
+}
+
+.rated-bar{
+    display: flex;
+}
+
+.rated-bar p{
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+.things-to-do ul, .avg-spending ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.avg-visitors img {
+    width: min-content;
+    height: 100%;
+}
+
+#avg-visitors h3 {
+    text-align: center;
+}
+
+.stats-visitor-book{
+    margin-left: 30px;
+}
+
+#visitors-stat{
+    margin: 0 auto;
+    width: 400px;
+    height : 350px;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .button-back{
+        z-index: 10;
+    }
+
+    .main-content{
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .header-background{
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        margin:0;
+        top: 0;
+        position: fixed;
+        padding: 0;
+        overflow-y: hidden;
+        font-size: 0.75em;
+    }
+
+    nav ul {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    
+    main {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bars{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .book-btn{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content{
+        display: block;
+        width: 100%;
+    }
+
+    .reviews, .details-activity-cost, .stats-visitor-book{
+        width: 100%;
+    }
+
+    .stats-visitor-book{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
