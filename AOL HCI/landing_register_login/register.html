@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form class="signup-form">
+            <h1>Create an account</h1>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+            <div class="form-group">
+                <label for="profileName">What should we call you?</label>
+                <input type="text" id="profileName" name="profileName" placeholder="Enter your profile name">
+            </div>
+            <div class="form-group">
+                <label for="email">What's your email?</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="password">Create a password</label>
+                <input type="text" id="password" name="password" placeholder="Enter your password">
+                <button type="button" class="password-toggle" onclick="togglePasswordVisibility()">Hide</button>
+                <p>Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            </div>
+            
+            <div class="policy">
+                <p>By creating an account, you agree to the <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a>.</p>
+            </div>
+            
+            <a  href="login.html" class="button">Create an account</a>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

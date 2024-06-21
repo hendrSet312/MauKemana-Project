@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: url('../img/landing_login_register/landing.jpg') no-repeat center center/cover;
+
+    height: 100%;
+    
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    color: #ff7f00;
+}
+
+main p {
+    width: 1000px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #ff7f00;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e57000;
+}
+
+#logo{
+    width: 20%;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    main p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.75em;
+    }
+}

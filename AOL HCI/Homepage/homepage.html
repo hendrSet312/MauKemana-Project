@@ -2,37 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src='https://cdn.plot.ly/plotly-2.32.0.min.js'></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homepage.css">
   <title>Travel Tracker</title>
 </head>
 <body>
   <nav>
-    <h2>Mau Kemana</h2>
+
+      <div class = 'logo-nav'>
+          <img src="../img/nav/flight_takeoff_white.png" alt="">
+          <h2>Mau Kemana</h2>
+      </div>
+      
     <ul>
-      <li><a href="../Homepage/homepage.html">Home</a></li>
-      <li><a href="../destination/destination.html">Destination</a></li>
-      <li><a href="../plans/plans.html">Plans</a></li>
-      <li><a href="../about_us/aboutus.html">About Us</a></li>
-      <li><a href="#">Log Out</a></li>
+      <li><a href="../Homepage/homepage.html"><span class="material-symbols-outlined">house</span> Home</a></li>
+      <li><a href="../destination/destination.html"><span class="material-symbols-outlined">add_location</span> Destination</a></li>
+      <li><a href="../plans/plans.html"><span class="material-symbols-outlined">map</span>Plans</a></li>
+      <li><a href="../about_us/aboutus.html"><span class="material-symbols-outlined">corporate_fare</span><About href="../plans/plans.html"> About Us</a></li>
+      <li><a href="../landing_register_login/login.html"><span class="material-symbols-outlined">door_open</span> Log Out</a></li>
     </ul>
   </nav>
 
   <main>
+    <div class="account-bar">
+      <img src="../img/homepage/avatar.png" alt="User Image">
+      <div class="account-profile">
+          <h3>Rodri Hernandez</h3>
+          <ul class = "account-details">
+            <li class="account-status">Online</li>
+            <li class="account-location">Macau</li>
+          </ul>
+  
+      </div>
+    </div>
+
     <header>
         <h1>Good Morning, Rodri !</h1>
       </header>
-      <div class="account-bar">
-        <img src="../img/homepage/avatar.png" alt="User Image">
-        <div class="account-profile">
-            <h3>Rodri Hernandez</h3>
-            <ul class = "account-details">
-              <li class="account-status">Online</li>
-              <li class="account-location">Macau</li>
-            </ul>
-            
-        </div>
-      </div>
       
 
 
@@ -113,7 +121,6 @@
           <div class = 'menu-section'>
               <div class="trip-card">
                 <img src="../img/homepage/gbk.png" alt="Gelora Bung Karno">
-                
                 <div class="trip-details">
                     <h3>Gelora Bung Karno</h3>
                     <div class="location">DKI Jakarta</div>
@@ -122,6 +129,7 @@
               </div>
           </div>
       </div>
+      
       <div class="section">
           <h2>Completed Trip</h2>
           <div class = 'menu-section'>
@@ -139,7 +147,6 @@
   </div>
     
   </main>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="d3-charts.js"></script>
+  <script src="plotly-chart.js"></script>
 </body>
 </html>

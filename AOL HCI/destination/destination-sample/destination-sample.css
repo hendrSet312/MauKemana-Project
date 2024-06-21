@@ -6,12 +6,12 @@ body{
 /* a navigation blocks on the left side with orange color*/
 
 .button-back {
-    width: min-content;
-    height: min-content;
-    padding: 10px;
+    width: max-content;
+    height: max-content;
+    padding: 15px;
     border : 1px solid white;
     border-radius: 10px;
-    background-color: #FF6F00;
+    background-color: #F0A544;
     color: white;
     font-size: 1.5em;
     z-index: 999;
@@ -35,27 +35,42 @@ nav ul{
     padding-left: calc(0%);
 }
 
-nav h2{
-    padding: 16px;
-    text-align: center;
-    color: white;
-}
+
 
 /* a block of navigation links with orange color background and hover effect to white color*/
 nav a{
     display: block;
-    color: black;
+    color: whitesmoke;
     padding: 16px;
     text-decoration: none;
-    background-color: orange;
+    background-color: #FFA500;
 }
 
 nav a:hover{
     background-color: white;
+    color: orange;
     width: auto;
 }
 
+nav .logo-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 
+.logo-nav img{
+    width: 50px;
+    margin:auto;
+}
+
+.logo-nav h2{
+    padding: 16px;
+    padding-top: 0px;
+    text-align: center;
+    color: white;
+}
 .main-content {
     font-size: 1em;
     flex-grow: 1;
@@ -211,6 +226,7 @@ nav a:hover{
 
 @media (max-width: 768px) {
     .button-back{
+        margin-left: 10px;
         z-index: 10;
     }
 
@@ -223,15 +239,16 @@ nav a:hover{
         display: none;
     }
 
+ 
     nav {
         width: 100%;
-        height: 70px;
+        height: max-content;
         margin:0;
         top: 0;
         position: fixed;
         padding: 0;
         overflow-y: hidden;
-        font-size: 0.75em;
+        font-size: 0.76em;
     }
 
     nav ul {
@@ -247,9 +264,31 @@ nav a:hover{
         padding: 0;
         font-size: 20px;
     }
+
+    nav .logo-nav img{
+        margin: 0;
+        display: none;
+    }
+
+    .logo-nav h2{
+        padding: 0px;
+        text-align: center;
+        color: white;
+    }
+
+    nav .logo-nav{
+        display: block;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+
+    nav ul li a{
+        padding : 5px 8px;
+    }
     
-    main {
-        margin-top: 50px;
+    .main-content {
+        margin-top: 90px;
         margin-left: auto;
         margin-right: auto;
     }
