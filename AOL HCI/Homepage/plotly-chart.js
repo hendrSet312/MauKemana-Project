@@ -69,7 +69,7 @@ function plotGraphs() {
         values: pieData.map(data => data.value),
         labels: pieData.map(data => data.category),
         domain: { column: 0 },
-        hole: .4,
+        hole:0.4,
         textinfo: "label+percent",
         textposition: "outside",
         insidetextorientation: "radial",
