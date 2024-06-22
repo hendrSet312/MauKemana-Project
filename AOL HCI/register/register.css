@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/img/landing_login_register/register_login_background.webp'); /* Replace with the actual image URL */
+    background-image: url('../img/landing_login_register/register_login_background.webp'); /* Replace with the actual image URL */
     background-size: cover;
     background-position: center;
 }
