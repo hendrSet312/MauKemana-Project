@@ -100,7 +100,7 @@ for (var i = 0; i < links.length; i++) {
         } else if (this.getAttribute('xlink:title') === 'Bali & Nusa tenggara') {
             image.setAttribute('xlink:href', '../img/destination/selected-nsb.png');
             islandNameElement.textContent = this.getAttribute('xlink:title');
-            editMoney(3000);
+            editMoney(2000);
             setStars(4);
             if(!selectedIsland['Bali & Nusa tenggara']){
                 selectIsland('Bali & Nusa tenggara');
@@ -109,7 +109,7 @@ for (var i = 0; i < links.length; i++) {
         }else if (this.getAttribute('xlink:title') === 'Java') {
             image.setAttribute('xlink:href', '../img/destination/selected-jawa.png');
             islandNameElement.textContent = this.getAttribute('xlink:title');
-            editMoney(3000);
+            editMoney(1000);
             setStars(5);
             if(!selectedIsland['Java']){
                 selectIsland('Java');
@@ -118,7 +118,7 @@ for (var i = 0; i < links.length; i++) {
         }else if (this.getAttribute('xlink:title') === 'Kalimantan') {
             image.setAttribute('xlink:href', '../img/destination/selected-kalimantan.png');
             islandNameElement.textContent = this.getAttribute('xlink:title');
-            editMoney(3000);
+            editMoney(2000);
             setStars(0);
             if(!selectedIsland['Kalimantan']){
                 selectIsland('Kalimantan');
@@ -127,8 +127,8 @@ for (var i = 0; i < links.length; i++) {
         }else if (this.getAttribute('xlink:title') === 'Sulawesi') {
             image.setAttribute('xlink:href', '../img/destination/selected-sulawesi.png');
             islandNameElement.textContent = this.getAttribute('xlink:title');
-            editMoney(3000);
-            setStars(5);
+            editMoney(0);
+            setStars(0);
             if(!selectedIsland['Sulawesi']){
                 selectIsland('Sulawesi');
                 addItems(items['Sulawesi']);
@@ -136,7 +136,7 @@ for (var i = 0; i < links.length; i++) {
         }else if (this.getAttribute('xlink:title') === 'Maluku') {
             image.setAttribute('xlink:href', '../img/destination/selected-maluku.png');
             islandNameElement.textContent = this.getAttribute('xlink:title');
-            editMoney(3000);
+            editMoney(0);
             setStars(0);
             if(!selectedIsland['Maluku']){
                 selectIsland('Maluku');

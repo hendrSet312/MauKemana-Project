@@ -2,9 +2,6 @@ body{
     font-family: Arial, sans-serif;
 }
 
-
-/* a navigation blocks on the left side with orange color*/
-
 .button-back {
     width: max-content;
     height: max-content;
@@ -35,9 +32,6 @@ nav ul{
     padding-left: calc(0%);
 }
 
-
-
-/* a block of navigation links with orange color background and hover effect to white color*/
 nav a{
     display: block;
     color: whitesmoke;
